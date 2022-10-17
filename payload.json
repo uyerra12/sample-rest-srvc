@@ -1,0 +1,9 @@
+{
+    "doc": {
+        "id": "7000",
+        "publication": "Towards Data Science",
+        "title": "A Beginner’s Guide to Word Embedding with Gensim Word2Vec Model",
+        "url": "https://towardsdatascience.com/a-beginners-guide-to-word-embedding-with-gensim-word2vec-model-5970fa56cc92"
+    },
+    "indexName": "test_index"
+}
