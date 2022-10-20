@@ -11,7 +11,7 @@
 
 echo "$WORKERS"
 
-if [ -z "$WORKERS" ]
+if [ "$WORKERS" == *"empty"* ]
 then
 	arr=( one two three )
 	for i in "${arr[@]}"; do
