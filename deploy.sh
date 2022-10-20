@@ -9,8 +9,18 @@
 
 #echo "$CF_WORKER_ADMIN_KEY"
 
-arr=( one two three )
-for i in "${arr[@]}"
-do
-	echo "$i"
-done
+echo "$WORKERS"
+
+if [ -z "$WORKERS" ]
+then
+	arr=( one two three )
+	for i in "${arr[@]}"; do
+		echo "$i"
+	done
+	
+else
+	IFS=';' read -ra WORKERSLIST <<< "$WORKERS"
+	for i in "${WORKERSLIST[@]}"; do
+		echo "$i"
+	done
+fi
