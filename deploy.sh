@@ -11,7 +11,9 @@
 
 echo "$WORKERS"
 
-if [ "$WORKERS" == *"empty"* ]
+default_list="WORKER1;WORKER2"
+
+if [ "$WORKERS" == "$default_list" ]
 then
 	declare -a workers_list=("one" "two" "three")
 	for i in "${workers_list[@]}"; do
