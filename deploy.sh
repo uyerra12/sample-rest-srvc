@@ -7,10 +7,10 @@
 #npm install -g wrangler
 
 
-echo "$CF_WORKER_ADMIN_KEY"
+#echo "$CF_WORKER_ADMIN_KEY"
 
-declare -a StringArray=("autosuggest-index-worker" "educator-index-worker")
-
-for value in ${StringArray[@]}; do
-    echo $value
+arr=( one two three )
+for i in "${arr[@]}"
+do
+	echo "$i"
 done
