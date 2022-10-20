@@ -1,7 +1,7 @@
 #!/bin/bash
 
-apt update
-apt install nodejs
+sudo apt update
+sudo apt install nodejs
 node -v
-apt install npm
+sudo apt install npm
 npm install -g wrangler
