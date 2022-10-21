@@ -14,8 +14,8 @@ env
 echo "$WORKERS"
 echo "$BRANCH"
 
-y="_"${BRANCH,,}
-echo $y
+tag=$(echo $BRANCH | tr '[:upper:]' '[:lower:]')
+echo "_${tag}"
 
 default_list="WORKER1;WORKER2"
 
