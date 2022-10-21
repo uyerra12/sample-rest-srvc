@@ -49,6 +49,7 @@ jobs:
           chmod +x deploy.sh
           ./deploy.sh
         env:
+          BRANCH: ${GITHUB_REF##*/}
           CF_WORKER_ADMIN_KEY: ${{ secrets.CF_WORKER_ADMIN_KEY }}
           WORKERS: ${{ inputs.workerList }}
 
