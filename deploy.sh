@@ -14,6 +14,9 @@ env
 echo "$WORKERS"
 echo "$BRANCH"
 
+y="_"${BRANCH,,}
+echo $y
+
 default_list="WORKER1;WORKER2"
 
 if [ "$WORKERS" == "$default_list" ]
