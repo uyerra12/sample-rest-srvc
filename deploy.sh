@@ -9,8 +9,9 @@
 
 #echo "$CF_WORKER_ADMIN_KEY"
 
-echo "$WORKERS"
+env
 
+echo "$WORKERS"
 echo "$BRANCH"
 
 default_list="WORKER1;WORKER2"
