@@ -11,6 +11,8 @@
 
 echo "$WORKERS"
 
+echo "$BRANCH"
+
 default_list="WORKER1;WORKER2"
 
 if [ "$WORKERS" == "$default_list" ]
