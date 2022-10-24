@@ -32,6 +32,7 @@ IFS=';' read -ra PREFIXES <<< "$KEY_PREFIXES"
 cat $filename
 
 for i in "${PREFIXES[@]}"; do
+	echo $i
 	replace=$i$tag
 	eval replace='$'$replace
 	echo $replace
