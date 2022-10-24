@@ -60,5 +60,10 @@ jobs:
           CF_WORKER_ADMIN_KEY3_MAIN: ${{ secrets.CF_WORKER_ADMIN_KEY }}
           CF_WORKER_ADMIN_KEY4_MAIN: ${{ secrets.CF_WORKER_ADMIN_KEY }}
           CF_WORKER_ADMIN_KEY5_MAIN: ${{ secrets.CF_WORKER_ADMIN_KEY }}
+          ALGOLIA_ADMIN_API_KEY_MAIN: ${{ secrets.ALGOLIA_ADMIN_API_KEY_MAIN }}
+          ALGOLIA_APP_ID_MAIN: ${{ secrets.ALGOLIA_APP_ID_MAIN }}
+          CLOUDFLARE_API_KEY_MAIN: ${{ secrets.CLOUDFLARE_API_KEY_MAIN }}
+          HASURA_ADMIN_ENDPOINT_MAIN: ${{ secrets.HASURA_ADMIN_ENDPOINT_MAIN }}
+          HASURA_ADMIN_KEY_MAIN: ${{ secrets.HASURA_ADMIN_KEY_MAIN }}
           WORKERS: ${{ inputs.workerList }}
 
