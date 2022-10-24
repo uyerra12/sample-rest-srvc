@@ -54,10 +54,10 @@ jobs:
           ./deploy.sh
         env:
           BRANCH: ${{ github.head_ref || github.ref_name }}
-          CF_WORKER_ADMIN_KEY1: ${{ secrets.CF_WORKER_ADMIN_KEY }}
-          CF_WORKER_ADMIN_KEY2: ${{ secrets.CF_WORKER_ADMIN_KEY }}
-          CF_WORKER_ADMIN_KEY3: ${{ secrets.CF_WORKER_ADMIN_KEY }}
-          CF_WORKER_ADMIN_KEY4: ${{ secrets.CF_WORKER_ADMIN_KEY }}
-          CF_WORKER_ADMIN_KEY5: ${{ secrets.CF_WORKER_ADMIN_KEY }}
+          CF_WORKER_ADMIN_KEY1_MAIN: ${{ secrets.CF_WORKER_ADMIN_KEY }}
+          CF_WORKER_ADMIN_KEY2_MAIN: ${{ secrets.CF_WORKER_ADMIN_KEY }}
+          CF_WORKER_ADMIN_KEY3_MAIN: ${{ secrets.CF_WORKER_ADMIN_KEY }}
+          CF_WORKER_ADMIN_KEY4_MAIN: ${{ secrets.CF_WORKER_ADMIN_KEY }}
+          CF_WORKER_ADMIN_KEY5_MAIN: ${{ secrets.CF_WORKER_ADMIN_KEY }}
           WORKERS: ${{ inputs.workerList }}
 
