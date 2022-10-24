@@ -1,0 +1,10 @@
+{
+    "name": "sample-rest-srvc",
+    "version": "0.0.0",
+    "devDependencies": {},
+    "private": true,
+    "scripts": {},
+    "dependencies": {
+        "wrangler": "2.1.11"
+    }
+}
