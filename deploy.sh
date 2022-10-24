@@ -18,7 +18,7 @@ env
 echo "$WORKERS"
 echo "$BRANCH"
 
-tag=$(echo $BRANCH | tr '[:upper:]' '[:lower:]')
+tag=$(echo $BRANCH | tr '[:lower:]' '[:upper:]')
 tag="_${tag}"
 echo $tag
 
