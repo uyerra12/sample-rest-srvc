@@ -25,9 +25,12 @@ filename="keys.txt"
 KEY_PREFIXES="CF_WORKER_ADMIN_KEY1;CF_WORKER_ADMIN_KEY2;CF_WORKER_ADMIN_KEY3;CF_WORKER_ADMIN_KEY4;CF_WORKER_ADMIN_KEY5"
 IFS=';' read -ra PREFIXES <<< "$KEY_PREFIXES"
 
+cat $filename
+
 for i in "${PREFIXES[@]}"; do
 	replace=$i$tag
 	eval replace='$'$replace
+	echo $replace
 	sed -i "s/$i/$replace/" $filename
 done
 
