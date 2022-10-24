@@ -29,6 +29,10 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'npm'
       
       - name: Default user
         run: whoami
@@ -50,6 +54,10 @@ jobs:
           ./deploy.sh
         env:
           BRANCH: ${{ github.head_ref || github.ref_name }}
-          CF_WORKER_ADMIN_KEY: ${{ secrets.CF_WORKER_ADMIN_KEY }}
+          CF_WORKER_ADMIN_KEY1: ${{ secrets.CF_WORKER_ADMIN_KEY }}
+          CF_WORKER_ADMIN_KEY2: ${{ secrets.CF_WORKER_ADMIN_KEY }}
+          CF_WORKER_ADMIN_KEY3: ${{ secrets.CF_WORKER_ADMIN_KEY }}
+          CF_WORKER_ADMIN_KEY4: ${{ secrets.CF_WORKER_ADMIN_KEY }}
+          CF_WORKER_ADMIN_KEY5: ${{ secrets.CF_WORKER_ADMIN_KEY }}
           WORKERS: ${{ inputs.workerList }}
 
