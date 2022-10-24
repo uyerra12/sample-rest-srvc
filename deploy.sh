@@ -20,7 +20,7 @@ echo $tag
 
 default_list="WORKER1;WORKER2"
 
-$filename="keys.txt"
+filename="keys.txt"
 
 KEY_PREFIXES="CF_WORKER_ADMIN_KEY1;CF_WORKER_ADMIN_KEY2;CF_WORKER_ADMIN_KEY3;CF_WORKER_ADMIN_KEY4;CF_WORKER_ADMIN_KEY5"
 IFS=';' read -ra PREFIXES <<< "$KEY_PREFIXES"
