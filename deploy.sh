@@ -7,7 +7,11 @@
 #npm install -g wrangler
 
 
-#echo "$CF_WORKER_ADMIN_KEY"
+echo "$CF_WORKER_ADMIN_KEY1_MAIN"
+echo "$CF_WORKER_ADMIN_KEY2_MAIN"
+echo "$CF_WORKER_ADMIN_KEY3_MAIN"
+echo "$CF_WORKER_ADMIN_KEY4_MAIN"
+echo "$CF_WORKER_ADMIN_KEY5_MAIN"
 
 env
 
